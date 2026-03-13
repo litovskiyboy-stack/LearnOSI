@@ -31,10 +31,50 @@
 
 ## 🛠️ Инструменты для практики
 
-- **GNS3** - эмуляция сетей Cisco
-- **Cisco Packet Tracer** - обучение новичков
-- **Wireshark** - анализ трафика
-- **Linux CLI** - bash скрипты и мониторинг
+- **Wireshark** - анализ трафика в реальном времени 🕵️‍♂️
+- **Linux CLI** - bash скрипты, мониторинг и диагностика
+- **VirtualBox/KVM** - виртуальные машины для тестирования
+- **Freepbx/Asterisk** - настройка VoIP серверов
+- **Debian 12+/CentOS 7+** - основные дистрибутивы для работы
+
+## 🐧 Рекомендуемое окружение (Linux)
+
+- **ОС**: Debian 12+, CentOS 7+, Ubuntu LTS
+- **Серверы**: Freepbx/Asterisk, Nginx, Apache, MySQL
+- **Мониторинг**: Prometheus, Grafana, Zabbix
+- **Анализ трафика**: tcpdump, tshark (Wireshark CLI)
+
+## 📦 Установка необходимых пакетов (Debian/Ubuntu)
+
+```bash
+# Установка инструментов для анализа сетей
+sudo apt update
+sudo apt install -y wireshark tcpdump net-tools iputils-ping dnsutils nmap
+
+# Для CentOS/RHEL
+sudo yum install -y wireshark tcpdump net-tools iputils dnsutils nmap
+```
+
+## 📦 Установка необходимых пакетов (CentOS 7+)
+
+```bash
+# Установка инструментов для анализа сетей
+sudo yum update
+sudo yum install -y wireshark tcpdump net-tools iputils-ping dnsutils nmap
+
+# Для CentOS 7 (если пакеты не найдены)
+sudo yum install -y NetworkManager-tcpdump
+```
+
+## 🐳 Виртуальные машины для тестирования
+
+- **VirtualBox** - бесплатная виртуализация
+- **KVM/QEMU** - нативная виртуализация Linux
+- **Docker** - контейнеры для быстрой настройки окружений
+
+---
+
+**Примечание**: Этот курс ориентирован на работу с Linux, Freepbx и современными дистрибутивами (Debian 12+, CentOS 7+). Все примеры и лабораторные работы адаптированы под это окружение.
 
 ## 📖 Как использовать
 
